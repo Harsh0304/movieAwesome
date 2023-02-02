@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block body %}
+
+<div class="container  text-center">
+<br>
+<br>
+ <h2 class="">{{data.title}}</h2>
+ <br><br>
+  <img class="" src="{{data.image.url}}" alt="" style="width: 400px; height: 500px;">
+  <br>
+  <div>
+      <h3 class="mt-4">imdb:{{data.rating}}/10</h3>
+      <h4>Movie Type: {{data.cat}}</h4>
+      <br>
+      <a href="{{data.download}}" class="btn btn-primary">Download</a>
+  </div>
+</div>
+{% endblock %}
